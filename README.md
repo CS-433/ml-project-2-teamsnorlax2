@@ -1,7 +1,7 @@
 # Unsupervised Droplet Counting and Classification, and Neubauer Chamber Automation
 **TeamSnorlax:**
-* Ruben Burdin
 * Medya Tekes
+* Ruben Burdin
 * Nicholas Sperry
 
 ## Overview
@@ -22,6 +22,7 @@ Have fun experimenting or futher researching!
 
 ## 🚀(spoiler) Use the tools in seconds with our public Docker images.
 Lightning fast. No libraries required. All models are pre-trained.
+Using the docker images is recommended to use the tool or to have a clean and short version of the whole project. All other elements made available in the github repositopry and Google Drive data storage are for independent model training and reproducibility. The models in the Docker images are pretrained and corresond exactly to the ones mentionned and developped by the author of the research paper.
 
 User guide:
 1. Install docker in your local device (to do only once).
@@ -70,15 +71,17 @@ For the Neubauer Chamber Automation:
     Snorlax Public Data
     ├── Droplet Detection
     │   ├── data_droplets
-    │   │   ├── droplets_original_annotated #contains original images as handed in by the laboratory
-    │   │   ├── droplets_original_not_annotated
-    │   │   ├── extracted_droplets_test_labelled
-    │   │   ├── extracted_droplets_train_unlabelled
-    │   └── models
+    │   │   ├── droplets_original_annotated #contains annotated images after the processing
+    │   │   └── droplets_original_not_annotated #contains original images as handed in by the laboratory
+    │   │   ├── extracted_droplets_test_labelled #segmented droplets labelled (1000 images)
+    │   │   └── extracted_droplets_train_unlabelled #training set of images, unlabelled for unsupervised learning
+    │   └── models #contains the pre-trained models necessary for further research development
     ├── Cell Counting Neubauer
-    │   ├── file21.ext
-    │   ├── file22.ext
-    │   └── file23.ext
+    │   ├── folder 1
+    │   ├── folder 2
+    │   ├── folder 3
+    │   └── folder 4
+ 
 
 #### Installation
 This project is based entirely on Jupyter Notebooks. To run these, make sure you have Anaconda installed on your machine. All the requirements should be already met, but if not there are some `!pip install ` commands in the notebooks for any extra requirements. This entire project was done using Google Colab, so there should be no issues when run from there.
