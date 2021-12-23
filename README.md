@@ -109,3 +109,4 @@ The second part of the project can be found in the `Project 2 - Cell counting in
 * `Neubauer Cell Counting.ipynb` - The notebook used to evaluate the UNet and Cell Counting on the unlabelled test set. 
 * `Square detection-func.ipynb` - This notebook combines the automatic (unsupervised) square detection of a Nuebauer Chamber image, and the trained UNet to segment and count each cell in an image. This then returns the cell concentration per cell.
 * `Square detection-manual square.ipynb` - Does the same as the notebook above, but this notebook requires a reference square to be drawn in the image (covering one of the Neubauer chamber squares). It then returns the cell concentration per cell.
+* 'squares_compare_treatment.xslx' - Performance comparison of square detection algorith for augmented set. 
