@@ -3,7 +3,7 @@
 This EPFL ML project (ML for science) aims at assisting with cutting edge machine learning techniques lab researches with 2 different tools. 
 - Project 1: A droplet counting and classification utility for microscope images
 - Project 2: A cell counting for neubauer chamber microscope images
-
+ 
 These can be considered as 2 different projects and required our team to double down on effort and resource investment for each of them. This is an outstanding achievement to have acheived two full machine learning projects when only one was required.
 
 These 2 projects are impact work. They aim at improving the quality, consistence and speed of analysis for lab researchers.
