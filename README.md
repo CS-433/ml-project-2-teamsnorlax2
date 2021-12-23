@@ -20,27 +20,64 @@ Please see the attached research paper in PDF for futher explanation on the meth
 
 Have fun experimenting or futher researching!
 
+## (spoiler) Use the tools in seconds with our public Docker images (Lightning fast. No libraries required. All models are pre-trained). 
+
+User guide:
+1. Install docker in your local device (to do only once).
+Go to [Docker official website](https://www.docker.com/products/docker-desktop).
+
+2. Run the container with a single command on the command line.
+For the Droplet Segmentation and Classification:
+    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-droplet-classification
+
+    #where “$PWD/leonie_input_data” is the folder address where the images to be annotated are located.
+
+The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
+References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification 
+
+For the Cell Counting:
+    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
+
+    #where “$PWD/leonie_input_data” is the folder address where the images to be annotated are located.
+
+The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
+References: https://hub.docker.com/r/rubenburdin/epfl-cell-counting
+
+That's it! 🥳
+
 ## Installation and Requirements
 
 ### Requirements
 
 #### Data
-This project involved using two separate datasets - one for the Unsupervised Droplet Counting and Classification and another for the Neubauer Chamber Automation. Due to the data augmentation methods we used, these datasets have become quite large so we instead host them in a Google Drive. For the Unsupervised Droplet Counting and Classification:
+This project involved using two separate datasets - one for the Unsupervised Droplet Counting and Classification and another for the Neubauer Chamber Automation. Due to the data augmentation methods we used, these datasets have become quite large so we instead host them in a Google Drive. The full data and models are available at https://drive.google.com/drive/folders/179HAtF0pKPRG7f6U2cTufaUGVEhyzO2Q.
+For the Unsupervised Droplet Counting and Classification:
 
-* Download the data from **https://drive.google.com/drive/folders/1Yo-KIokmTKfmPn24HVe8RVNiXe54eG08**, and place inside the `Project 1 - Unsupervised Droplet classification/` folder.
+* Download the data from https://drive.google.com/drive/folders/1Yo-KIokmTKfmPn24HVe8RVNiXe54eG08, and place inside the `Project 1 - Unsupervised Droplet classification/` folder.
 
 For the Neubauer Chamber Automation:
 
-* Download the data from **LINK**, and place inside the `Project 2 - Cell counting in Neubauer Chambers/`folder. This data set is quite large, around 4 Gigabytes.
+* Download the data from https://drive.google.com/drive/folders/1YSCyHa7qYJeBbobsf_tAgTVp4repoytO, and place inside the `Project 2 - Cell counting in Neubauer Chambers/`folder. This data set is quite large, around 4 Gigabytes.
+
+##### Description of the folders in the [Public Google Drive](https://drive.google.com/drive/folders/179HAtF0pKPRG7f6U2cTufaUGVEhyzO2Q)
+
+Snorlax Public Data
+├── Droplet Detection
+│   ├── file11.ext
+│   └── file12.ext
+├── Cell Counting Neubauer
+│   ├── file21.ext
+│   ├── file22.ext
+│   └── file23.ext
 
 #### Installation
 This project is based entirely on Jupyter Notebooks. To run these, make sure you have Anaconda installed on your machine. All the requirements should be already met, but if not there are some `!pip install ` commands in the notebooks for any extra requirements. This entire project was done using Google Colab, so there should be no issues when run from there.
 
-We also provide some **public Docker images** at https://hub.docker.com/u/rubenburdin
+We also provide some **Public Docker images** hosted on [DockerHub](https://hub.docker.com/u/rubenburdin)
 
 
 ## Project Layout
-Since this project contains two sub-projects, we have split the GitHub to make this cleaner. 
+Since this project contains two sub-projects, we have split the GitHub to make this easy to follow. 
 
 ### Project 1 - Unsupervised Droplet Counting and Classification
 The first part of the project can be found in the `Project 1 - Unsupervised Droplet classification/` folder, and contains the following notebooks:
