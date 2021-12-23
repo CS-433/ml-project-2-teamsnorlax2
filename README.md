@@ -40,14 +40,6 @@ Go to [Docker official website](https://www.docker.com/products/docker-desktop).
 The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification 
 
-
-### For the Cell Counting:
-
-    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
-
-A summary excel sheet will be returned with the counting of cells per chamber! 🚀
-References: https://hub.docker.com/r/rubenburdin/epfl-cell-counting
-
 That's it! 🥳
 
 <br />
@@ -64,7 +56,7 @@ For the Unsupervised Droplet Counting and Classification:
 
 For the Neubauer Chamber Automation:
 
-* Download the data from https://drive.google.com/drive/folders/1YSCyHa7qYJeBbobsf_tAgTVp4repoytO, and place inside the `Project 2 - Cell counting in Neubauer Chambers/`folder. This data set is quite large, around 4 Gigabytes.
+* Download the 2 folders in https://drive.google.com/drive/folders/1YSCyHa7qYJeBbobsf_tAgTVp4repoytO, and place them both inside the `Project 2 - Cell counting in Neubauer Chambers/`folder. This data set is quite large, around 4 Gigabytes.
 
 ##### Description of the folders in the [Public Google Drive](https://drive.google.com/drive/folders/179HAtF0pKPRG7f6U2cTufaUGVEhyzO2Q)
 
@@ -77,10 +69,19 @@ For the Neubauer Chamber Automation:
     │   │   └── extracted_droplets_train_unlabelled #training set of images, unlabelled for unsupervised learning
     │   └── models #contains the pre-trained models necessary for further research development
     ├── Cell Counting Neubauer
-    │   ├── folder 1
-    │   ├── folder 2
-    │   ├── folder 3
-    │   └── folder 4
+    │   ├── models #contains pre-trained UNet models
+    │   ├── Data Set 
+    │        ├── Originals
+    |            ├── Images #contains original images taken from Instagram
+    |            ├── Masks #contains the masks for the original images taken from Instagram
+    │        ├── Square detection
+    |            ├── Cropped-augmented-norotation #contains augmented image set used to test square detection algorithm
+    |            ├── Results #contains the results of square detection algorithm on augmented set
+    |            ├── Manual squares #contains examples for the alternative approach with manually drawn square detection algorithm
+    │        ├── train_augmented
+    |            ├── images # contains the augmented set used in model training for cell detection/counting
+    |            ├── masks # contains the masks for the augmented set used in model training for cell detection/counting
+    │        └── 
  
 
 #### Installation
