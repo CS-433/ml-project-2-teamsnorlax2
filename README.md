@@ -27,7 +27,7 @@ Have fun experimenting or futher researching!
 #### Data
 This project involved using two separate datasets - one for the Unsupervised Droplet Counting and Classification and another for the Neubauer Chamber Automation. Due to the data augmentation methods we used, these datasets have become quite large so we instead host them in a Google Drive. For the Unsupervised Droplet Counting and Classification:
 
-* Download the data from **LINK**, and place inside the `Project 1 - Unsupervised Droplet classification/` folder.
+* Download the data from **https://drive.google.com/drive/folders/1Yo-KIokmTKfmPn24HVe8RVNiXe54eG08**, and place inside the `Project 1 - Unsupervised Droplet classification/` folder.
 
 For the Neubauer Chamber Automation:
 
@@ -36,7 +36,7 @@ For the Neubauer Chamber Automation:
 #### Installation
 This project is based entirely on Jupyter Notebooks. To run these, make sure you have Anaconda installed on your machine. All the requirements should be already met, but if not there are some `!pip install ` commands in the notebooks for any extra requirements. This entire project was done using Google Colab, so there should be no issues when run from there.
 
-We also provide some Docker images: **LINK AND LINK**
+We also provide some **public Docker images** at https://hub.docker.com/u/rubenburdin
 
 
 ## Project Layout
@@ -45,8 +45,8 @@ Since this project contains two sub-projects, we have split the GitHub to make t
 ### Project 1 - Unsupervised Droplet Counting and Classification
 The first part of the project can be found in the `Project 1 - Unsupervised Droplet classification/` folder, and contains the following notebooks:
 
-* `unsupervised_droplet_classifier_demo.ipynb` - **Explain**
-* `unsupervised_droplet_classification_analysis.ipynb` - **Explain**
+* `unsupervised_droplet_classifier_demo.ipynb` - The notebook contains the whole pipeline including the ingestion of original data, image preprocessing, droplet segmentation and droplet classification.
+* `unsupervised_droplet_classification_analysis.ipynb` - The notebook contains all the image preprocessing code, and code snippets that have been used to create different models and evaluate them.
 
 ### Project 2 - Neubauer Chamber Automation
 The second part of the project can be found in the `Project 2 - Cell counting in Neubauer Chambers/`folder, and contains the following notebooks:
