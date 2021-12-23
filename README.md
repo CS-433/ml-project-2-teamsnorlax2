@@ -70,8 +70,10 @@ For the Neubauer Chamber Automation:
 Snorlax Public Data
 ├── Droplet Detection
 │   ├── data_droplets
-│   │   ├──
-        
+│   │   ├── droplets_original_annotated #contains original images as handed in by the laboratory
+│   │   ├── droplets_original_not_annotated
+│   │   ├── extracted_droplets_test_labelled
+│   │   ├── extracted_droplets_train_unlabelled
 │   └── models
 ├── Cell Counting Neubauer
 │   ├── file21.ext
