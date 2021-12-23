@@ -73,15 +73,14 @@ For the Neubauer Chamber Automation:
     │   ├── Data Set 
     │        ├── Originals
     |            ├── Images #contains original images taken from Instagram
-    |            ├── Masks #contains the masks for the original images taken from Instagram
+    |            └── Masks #contains the masks for the original images taken from Instagram
     │        ├── Square detection
-    |            ├── Cropped-augmented-norotation #contains augmented image set used to test square detection algorithm
+    |            └── Cropped-augmented-norotation #contains augmented image set used to test square detection algorithm
     |            ├── Results #contains the results of square detection algorithm on augmented set
-    |            ├── Manual squares #contains examples for the alternative approach with manually drawn square detection algorithm
-    │        ├── train_augmented
+    |            └── Manual squares #contains examples for the alternative approach with manually drawn square detection algorithm
+    │        └── train_augmented
     |            ├── images # contains the augmented set used in model training for cell detection/counting
-    |            ├── masks # contains the masks for the augmented set used in model training for cell detection/counting
-    │        └── 
+    |            └── masks # contains the masks for the augmented set used in model training for cell detection/counting 
  
 
 #### Installation
