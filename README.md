@@ -67,18 +67,18 @@ For the Neubauer Chamber Automation:
 
 ##### Description of the folders in the [Public Google Drive](https://drive.google.com/drive/folders/179HAtF0pKPRG7f6U2cTufaUGVEhyzO2Q)
 
-Snorlax Public Data
-├── Droplet Detection
-│   ├── data_droplets
-│   │   ├── droplets_original_annotated #contains original images as handed in by the laboratory
-│   │   ├── droplets_original_not_annotated
-│   │   ├── extracted_droplets_test_labelled
-│   │   ├── extracted_droplets_train_unlabelled
-│   └── models
-├── Cell Counting Neubauer
-│   ├── file21.ext
-│   ├── file22.ext
-│   └── file23.ext
+    Snorlax Public Data
+    ├── Droplet Detection
+    │   ├── data_droplets
+    │   │   ├── droplets_original_annotated #contains original images as handed in by the laboratory
+    │   │   ├── droplets_original_not_annotated
+    │   │   ├── extracted_droplets_test_labelled
+    │   │   ├── extracted_droplets_train_unlabelled
+    │   └── models
+    ├── Cell Counting Neubauer
+    │   ├── file21.ext
+    │   ├── file22.ext
+    │   └── file23.ext
 
 #### Installation
 This project is based entirely on Jupyter Notebooks. To run these, make sure you have Anaconda installed on your machine. All the requirements should be already met, but if not there are some `!pip install ` commands in the notebooks for any extra requirements. This entire project was done using Google Colab, so there should be no issues when run from there.
