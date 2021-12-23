@@ -78,9 +78,10 @@ For the Neubauer Chamber Automation:
     |            ├── Cropped-augmented-norotation #contains augmented image set used to test square detection algorithm
     |            ├── Results #contains the results of square detection algorithm on augmented set
     |            └── Manual squares #contains examples for the alternative approach with manually drawn square detection algorithm
-    │        └── train_augmented
+    │        ├── train_augmented
     |            ├── images # contains the augmented set used in model training for cell detection/counting
-    |            └── masks # contains the masks for the augmented set used in model training for cell detection/counting 
+    |            └── masks # contains the masks for the augmented set used in model training for cell detection/counting
+    │        └── unlabeled # contains test set for Neubauer Cell Counting notebook
  
 
 #### Installation
