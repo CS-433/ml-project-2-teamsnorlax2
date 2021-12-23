@@ -45,7 +45,7 @@ References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification
 
     docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
 
-The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
+A summary excel sheet will be returned with the counting of cells per chamber! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-cell-counting
 
 That's it! 🥳
