@@ -20,14 +20,18 @@ Please see the attached research paper in PDF for futher explanation on the meth
 
 Have fun experimenting or futher researching!
 
-## (spoiler) Use the tools in seconds with our public Docker images (Lightning fast. No libraries required. All models are pre-trained). 
+## 🚀(spoiler) Use the tools in seconds with our public Docker images.
+Lightning fast. No libraries required. All models are pre-trained.
 
 User guide:
 1. Install docker in your local device (to do only once).
 Go to [Docker official website](https://www.docker.com/products/docker-desktop).
 
 2. Run the container with a single command on the command line.
-For the Droplet Segmentation and Classification:
+
+### For the Droplet Segmentation and Classification:
+
+
     docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-droplet-classification
 
     #where “$PWD/leonie_input_data” is the folder address where the images to be annotated are located.
@@ -35,10 +39,10 @@ For the Droplet Segmentation and Classification:
 The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification 
 
-For the Cell Counting:
-    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
+<br />
+### For the Cell Counting:
 
-    #where “$PWD/leonie_input_data” is the folder address where the images to be annotated are located.
+    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
 
 The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-cell-counting
