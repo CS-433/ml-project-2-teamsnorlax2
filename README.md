@@ -39,7 +39,7 @@ Go to [Docker official website](https://www.docker.com/products/docker-desktop).
 The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification 
 
-<br />
+
 ### For the Cell Counting:
 
     docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
@@ -48,6 +48,8 @@ The annotated images will be located into a new “annotated_images” folder in
 References: https://hub.docker.com/r/rubenburdin/epfl-cell-counting
 
 That's it! 🥳
+
+<br />
 
 ## Installation and Requirements
 
@@ -67,8 +69,10 @@ For the Neubauer Chamber Automation:
 
 Snorlax Public Data
 ├── Droplet Detection
-│   ├── file11.ext
-│   └── file12.ext
+│   ├── data_droplets
+│   │   ├──
+        
+│   └── models
 ├── Cell Counting Neubauer
 │   ├── file21.ext
 │   ├── file22.ext
