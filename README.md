@@ -37,6 +37,13 @@ Go to [Docker official website](https://www.docker.com/products/docker-desktop).
 
     #where “$PWD/leonie_input_data” is the folder address where the images to be annotated are located.
 
+
+### For the Cell Counting in Neubauer Chamber:
+
+
+    docker run -it -v $PWD/leonie_input_data:/usr/src/app/input_data rubenburdin/epfl-cell-counting
+
+
 The annotated images will be located into a new “annotated_images” folder into the original image folder, with a summary excel sheet! 🚀
 References: https://hub.docker.com/r/rubenburdin/epfl-droplet-classification 
 
